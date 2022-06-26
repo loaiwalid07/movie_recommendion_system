@@ -7,7 +7,7 @@ By: Loai Nazeer
 
 # import modules
 import pandas as pd
-import matplotlib as plt
+#import matplotlib as plt
 import numpy as np
 import nltk
 import gdown
