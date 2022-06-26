@@ -10,7 +10,7 @@ import pandas as pd
 #import matplotlib as plt
 import numpy as np
 import nltk
-import gdown
+#import gdown
 import re
 from nltk.corpus import stopwords
 from sklearn.feature_extraction.text import TfidfVectorizer
