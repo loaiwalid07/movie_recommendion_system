@@ -33,7 +33,7 @@ if submit:
         with st.spinner('Searching for Movies'):
             time.sleep(2)
 
-            rec = get_recommendations(str(fav_mov),count)
+            rec = get_recommendations(str(fav_mov),count+1)
             urlss=[]
             for i in range(0,len(rec)):
               urlss.append(search_in_google(rec['title'][i]))
