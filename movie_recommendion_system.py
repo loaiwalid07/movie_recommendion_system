@@ -77,9 +77,9 @@ tfidf_matrix.shape
 ################# Recommendation#############
 
 cosine_sim = linear_kernel(tfidf_matrix, tfidf_matrix)
-
-indices = pd.Series(data.index, index=data['title']).drop_duplicates()
 data['title']=data['title'].drop_duplicates()
+indices = pd.Series(data.index, index=data['title']).drop_duplicates()
+
 def get_recommendations(title,coun, cosine_sim=cosine_sim):
     idx = indices[title]
     sim_scores = list(enumerate(cosine_sim[idx]))
