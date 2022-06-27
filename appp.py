@@ -40,7 +40,8 @@ if submit:
             rec["url"]=urlss
             
             st.header('You might like these Movies')
-            st.dataframe(rec[["title","vote_average","url"]])
+            rec.index = rec.index + 1
+            st.dataframe(rec[["title","vote_average"]])
             for j in range(0,len(rec)) :
                st.info(str(rec["title"][j])+f'\n_______\n'+str(rec["url"][j][0])+f'\n_______\n'+str(rec["url"][j][1])+
                         f'\n_______\n'+str(rec["url"][j][2])+f'\n_______\n'+str(rec["url"][j][3])+
