@@ -18,7 +18,7 @@ fav_mov = st.selectbox(
 count = st.slider(
     label='Number of Movies to display',
     min_value=1,
-    max_value=15,
+    max_value=20,
     value=7,
     step=1
 )
