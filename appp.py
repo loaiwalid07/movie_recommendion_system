@@ -7,7 +7,7 @@ st.set_page_config(
     page_title="Movies Selector",
     page_icon='https://icon-library.com/images/movie-icon-png/movie-icon-png-2.jpg'
 )
-st.title('Movie Recommendation System')
+st.image('Movies Selector.jpg', use_column_width=True)
 
 st.subheader('Enter Movie that you love very much and this recommender will suggest you different Movies that you might like')
 
