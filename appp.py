@@ -1,12 +1,40 @@
 import streamlit as st
 from movie_recommendion_system import *
 import time
+import base64
 
+st.set_page_config(
+    page_title="Movies Selector",
+    page_icon='https://icon-library.com/images/movie-icon-png/movie-icon-png-2.jpg'
+)
 st.title('Movie Recommendation System')
 
-st.header('Enter Movie that you love very much and this recommender will suggest you different Movies that you might like')
+st.subheader('Enter Movie that you love very much and this recommender will suggest you different Movies that you might like')
 
 st.image('movies-.jpg', use_column_width=True)
+############# Set Background #############
+def set_bg_hack_url():
+    '''
+    A function to unpack an image from url and set as bg.
+    Returns
+    -------
+    https://i.makeagif.com/media/8-07-2015/vPFMLo.gif
+    https://i.pinimg.com/originals/73/62/75/7362759c02faa8997f142569eeffd872.gif
+    The background.
+    '''
+        
+    st.markdown(
+         f"""
+         <style>
+         .stApp {{
+             background: url("https://i.pinimg.com/originals/73/62/75/7362759c02faa8997f142569eeffd872.gif");
+             background-size: cover
+         }}
+         </style>
+         """,
+         unsafe_allow_html=True
+     )
+set_bg_hack_url()
 
 #@st.cache()
 
